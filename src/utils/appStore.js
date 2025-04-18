@@ -1,9 +1,15 @@
 // store.js or appStore.js
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer from './userSlice'; // make sure the path is correct
+import userReducer from './userSlice'; 
+import feedReducer from "./feedSlice";
+import requestReducer from "./requestSlice";
+import connectionReducer from "./connectSlice";
 
 export const appStore = configureStore({
   reducer: {
-    user: userReducer, // ✅ This must match the slice name or your chosen key
+    user: userReducer,
+    feed: feedReducer, 
+    requests: requestReducer,
+    connections: connectionReducer,
   },
 });
