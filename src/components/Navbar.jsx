@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-xl">DevTinder</Link>
+        <Link to="/" className="btn btn-ghost text-xl">CodeMate</Link>
       </div>
       <div className="flex-none gap-2">
       {user && (
@@ -42,7 +42,7 @@ const Navbar = () => {
           <img
             alt="User avatar"
             src={
-              user?.user?.profilePhoto ||
+              user?.user?.photoUrl ||
               "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
             }
           />
