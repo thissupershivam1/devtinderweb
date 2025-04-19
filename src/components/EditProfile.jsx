@@ -32,7 +32,6 @@ const EditProfile = ({ user }) => {
         },
         { withCredentials: true }
       );
-      console.log("edit response", res.data);
       dispatch(addUser(res?.data?.data));
       setShowToast(true);
       setTimeout(() => {
